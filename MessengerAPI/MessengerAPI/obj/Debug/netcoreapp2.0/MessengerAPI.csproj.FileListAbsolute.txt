@@ -1,0 +1,12 @@
+C:\MessengerAPI\MessengerAPI\bin\Debug\netcoreapp2.0\MessengerAPI.deps.json
+C:\MessengerAPI\MessengerAPI\bin\Debug\netcoreapp2.0\MessengerAPI.runtimeconfig.json
+C:\MessengerAPI\MessengerAPI\bin\Debug\netcoreapp2.0\MessengerAPI.runtimeconfig.dev.json
+C:\MessengerAPI\MessengerAPI\bin\Debug\netcoreapp2.0\MessengerAPI.dll
+C:\MessengerAPI\MessengerAPI\obj\Debug\netcoreapp2.0\MessengerAPI.csprojResolveAssemblyReference.cache
+C:\MessengerAPI\MessengerAPI\obj\Debug\netcoreapp2.0\MessengerAPI.csproj.CoreCompileInputs.cache
+C:\MessengerAPI\MessengerAPI\obj\Debug\netcoreapp2.0\MessengerAPI.AssemblyInfoInputs.cache
+C:\MessengerAPI\MessengerAPI\obj\Debug\netcoreapp2.0\MessengerAPI.AssemblyInfo.cs
+C:\MessengerAPI\MessengerAPI\bin\Debug\netcoreapp2.0\MessengerAPI.pdb
+C:\MessengerAPI\MessengerAPI\obj\Debug\netcoreapp2.0\MessengerAPI.dll
+C:\MessengerAPI\MessengerAPI\obj\Debug\netcoreapp2.0\MessengerAPI.pdb
+C:\MessengerAPI\MessengerAPI\bin\Debug\netcoreapp2.0\MessengerAPI.xml

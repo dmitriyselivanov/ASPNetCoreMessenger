@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  messengerui:
+    build:
+      context: C:\MessengerUI
+      dockerfile: MessengerUI\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: messengerui
+    ports:
+    - 80/tcp
+version: '3.0'

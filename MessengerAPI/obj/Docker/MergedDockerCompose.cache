@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  messengerapi:
+    build:
+      context: C:\MessengerAPI
+      dockerfile: MessengerAPI\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: messengerapi
+    ports:
+    - 80/tcp
+version: '3.0'
