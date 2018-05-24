@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Microsoft.AspNetCore.Cors;
 
 namespace MessengerAPI.Controllers
 {
@@ -26,6 +27,7 @@ namespace MessengerAPI.Controllers
         /// Index page
         /// </summary>
         [Route("Contacts/Index")]
+        [EnableCors("AllowAll")]
         [HttpGet]
         public ActionResult Index()
         {
@@ -36,6 +38,7 @@ namespace MessengerAPI.Controllers
         /// Get all contacts via ajax
         /// </summary>
         [Route("Contacts/AjaxGetContacts")]
+        [EnableCors("AllowAll")]
         [HttpGet]
         public IActionResult AjaxGetContacts(string owner)
         {
@@ -54,6 +57,7 @@ namespace MessengerAPI.Controllers
         /// Create contacts
         /// </summary>
         [Route("Contacts/Create")]
+        [EnableCors("AllowAll")]
         [HttpPost]
         public async Task<IActionResult> Create(string owner)
         {
@@ -71,6 +75,7 @@ namespace MessengerAPI.Controllers
         /// Add contacts
         /// </summary>
         [Route("Contacts/Add")]
+        [EnableCors("AllowAll")]
         [HttpPost]
         public async Task<IActionResult> Add(string owner, string username)
         {
@@ -94,6 +99,7 @@ namespace MessengerAPI.Controllers
         /// Deletes user from contacts
         /// </summary>
         [Route("Contacts/Delete")]
+        [EnableCors("AllowAll")]
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(string owner, string username)
         {

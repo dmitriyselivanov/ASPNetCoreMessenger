@@ -23,6 +23,8 @@ using MessengerAPI.Models;
 using System.IO;
 using System.Reflection;
 using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
 
 namespace MessengerAPI
 {
@@ -38,6 +40,7 @@ namespace MessengerAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin()
                                                                     .AllowAnyMethod()
                                                                      .AllowAnyHeader()));
@@ -79,6 +82,7 @@ namespace MessengerAPI
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }

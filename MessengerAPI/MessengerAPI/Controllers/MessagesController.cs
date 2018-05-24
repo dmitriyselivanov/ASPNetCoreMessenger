@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using MessengerAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 
 namespace MessengerAPI.Controllers
 {
@@ -23,6 +24,7 @@ namespace MessengerAPI.Controllers
         /// Index page
         /// </summary>
         [Route("Messages/Index")]
+        [EnableCors("AllowAll")]
         [HttpGet]
         public ActionResult Index()
         {
@@ -33,6 +35,7 @@ namespace MessengerAPI.Controllers
         /// Get all messages via Ajax
         /// </summary>
         [Route("Messages/AjaxGetMessages")]
+        [EnableCors("AllowAll")]
         [HttpGet]
         public IActionResult AjaxGetMessages(string senderID, string receiverID, int numPage = 0)
         {
@@ -44,6 +47,7 @@ namespace MessengerAPI.Controllers
         /// Creates a Message
         /// </summary>
         [Route("Messages/Create")]
+        [EnableCors("AllowAll")]
         [HttpPost]
         public async Task<IActionResult> Create(string text, string senderID, string receiverID)
         {
@@ -62,6 +66,7 @@ namespace MessengerAPI.Controllers
         /// Deletes a specific message
         /// </summary>
         [Route("Messages/Delete")]
+        [EnableCors("AllowAll")]
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
