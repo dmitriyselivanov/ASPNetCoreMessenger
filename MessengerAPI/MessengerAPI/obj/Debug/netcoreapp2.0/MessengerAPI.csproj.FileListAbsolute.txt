@@ -9,4 +9,3 @@ C:\MessengerAPI\MessengerAPI\obj\Debug\netcoreapp2.0\MessengerAPI.AssemblyInfo.c
 C:\MessengerAPI\MessengerAPI\bin\Debug\netcoreapp2.0\MessengerAPI.pdb
 C:\MessengerAPI\MessengerAPI\obj\Debug\netcoreapp2.0\MessengerAPI.dll
 C:\MessengerAPI\MessengerAPI\obj\Debug\netcoreapp2.0\MessengerAPI.pdb
-C:\MessengerAPI\MessengerAPI\bin\Debug\netcoreapp2.0\MessengerAPI.xml

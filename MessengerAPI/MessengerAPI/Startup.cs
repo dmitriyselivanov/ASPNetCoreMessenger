@@ -49,24 +49,7 @@ namespace MessengerAPI
             // Register the Swagger generator, defining one or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info
-                {
-                    Version = "v1",
-                    Title = "Messenger API",
-                    Description = "A simple messengerAPI",
-                    TermsOfService = "None",
-                    Contact = new Contact
-                    {
-                        Name = "Dmitry Selivanov",
-                        Email = string.Empty,
-                        Url = "http://github.com/dmitriyselivanov"
-                    }
-                });
-
-                // Set the comments path for the Swagger JSON and UI.
-                var xmlFile = $"{Assembly.GetEntryAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             });
 
         }
