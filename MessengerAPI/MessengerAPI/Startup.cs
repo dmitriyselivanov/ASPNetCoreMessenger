@@ -62,6 +62,8 @@ namespace MessengerAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors("AllowAll");
+
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
